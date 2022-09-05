@@ -97,7 +97,7 @@ nav {
 .fundo {
     width: 100%;
     height: auto;
-  /*  background: url(../img/fundo.png) repeat;*/
+    background: url(../img/fundo.png) repeat;
     background-size: 100%;
     padding: 0;
     margin-top: 2rem;
@@ -250,13 +250,13 @@ nav {
     box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
- .meta {
+.meta {
     width: 80%;
     margin-bottom: 0;
     padding-bottom: 0;
-} 
+}
 
-.alura{
+.alura {
     width: auto;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -452,7 +452,7 @@ footer i {
     transition: 1s linear;
 }
 
-footer i:hover{
+footer i:hover {
     color: #ff4242;
     font-size: 1.1rem;
 }
@@ -582,7 +582,9 @@ footer i:hover{
         width: 50%;
     }
 
-    table, tr, td{
+    table,
+    tr,
+    td {
         display: inline;
         padding: 0;
     }
