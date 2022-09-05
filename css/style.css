@@ -590,6 +590,16 @@ footer i:hover {
     }
 }
 
+@media (min-width: 2560px){
+    html{
+        font-size:200%;
+    }
+
+    .alura{
+    width:60%;
+    }
+}
+
 
 /* Barra de rolagem personalizada INICIO */
 ::-webkit-scrollbar {
