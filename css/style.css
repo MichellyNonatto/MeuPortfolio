@@ -1,0 +1,610 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'heavy';
+    src: url('../font/jabjai_heavy.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../font/jabjai_light.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'face';
+    src: url('../font/Yagitudeh.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    --background: #111;
+    --font: #fff;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: var(--font);
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--background);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.auxiliar {
+    margin: 5px 10% 50px 10%;
+    scroll-behavior: smooth;
+    margin-top: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.menu ul,
+.menu a {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li {
+    margin-left: 2rem;
+    transition: .5s ease;
+}
+
+.menu li:hover {
+    font-size: .9rem;
+}
+
+.coracao {
+    display: flex;
+}
+
+.coracao button {
+    background-color: var(--background);
+    border: none;
+    cursor: pointer;
+}
+
+.contadora {
+    padding: 1rem;
+    width: auto;
+}
+
+/*fundo*/
+
+.fundo {
+    width: 100%;
+    height: auto;
+    background: url(../img/fundo.png) repeat;
+    background-size: 100%;
+    padding: 0;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+/*home*/
+
+#home h1 {
+    font-family: 'light', 'Poppins';
+    font-size: 6rem;
+    font-weight: normal;
+    margin-bottom: 0rem;
+}
+
+#home h2 {
+    font-size: 2rem;
+    font-family: 'heavy', 'Poppins';
+    margin-top: 2rem;
+}
+
+.button {
+    align-items: center;
+}
+
+.button i {
+    font-size: 2rem;
+    margin: 0 .5rem;
+}
+
+.button button {
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border-style: solid;
+    border-radius: 100px;
+    font-family: 'face', 'Poppins';
+    margin: 2rem 1rem 0 1rem;
+    transition: transform .5s;
+    cursor: pointer;
+    border-width: 2px 5px 6px 0px;
+}
+
+.github {
+    background: #BC00DD;
+    border-color: #470054;
+}
+
+.linkedin {
+    background: #0085EB;
+    border-color: #004173;
+}
+
+.social:hover {
+    transform: scale(.9);
+}
+
+.aboutme p {
+    margin-top: 4em;
+    text-align: center;
+    font-size: 1em;
+    color: rgba(238, 238, 238, 0.5);
+    padding: 0 20%;
+    line-height: 1.5rem;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flexEstatico {
+    display: flex;
+}
+
+.sesao {
+    text-align: center;
+    font-family: 'face', 'poppins';
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 0;
+    padding: 3rem;
+}
+
+.image img {
+    width: 20rem;
+}
+
+.sobreMim {
+    margin-top: 4rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.sobreMim h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+}
+
+.sobreMim h5 {
+    font-size: 1.2rem;
+}
+
+.email {
+    background: #ff4242;
+    border-style: solid;
+    border-color: #e72b2b;
+}
+
+.curriculo {
+    border-style: solid;
+    background: #FF006E;
+    border-color: #A20046;
+}
+
+.linhaTempo img {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.responsivoImg {
+    display: none;
+}
+
+.historia {
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.text {
+    margin-right: 10rem;
+    width: 30rem;
+    line-height: 2rem;
+}
+
+.text h5 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.historia .image img {
+    margin-top: 8rem;
+}
+
+/*projetos*/
+
+.box {
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+    box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+ .meta {
+    width: 80%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+} 
+
+.alura{
+    width: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.top {
+    width: 12rem;
+    background-color: #212121;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .5em;
+    height: 8rem;
+    padding-top: .5rem;
+}
+
+
+.footer {
+    height: auto;
+}
+
+.color1 .footer,
+.color2 .footer {
+    background: #313131;
+}
+
+.footer i {
+    font-size: 2rem;
+    margin: 1rem .5rem 1.5rem .5rem;
+    color: #C5C5C5;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.footer i:hover {
+    color: #000;
+    font-size: 1.8rem;
+}
+
+/*skills*/
+
+.skills h5 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.boxSkill {
+    width: 12rem;
+    background: #212121;
+    margin: 0 1rem 0 1rem;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 3rem 3rem;
+    box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boxSkill p {
+    font-weight: 600;
+    margin: 1rem 1rem;
+}
+
+.boxSkill i {
+    margin: 0 .5rem;
+    font-size: 2.3rem;
+    color: #C5C5C5;
+    transition: 1s ease;
+    background-color: none;
+}
+
+.iconSkill {
+    margin: 1rem .5rem;
+}
+
+.nivel {
+    color: #3F7509;
+}
+
+.nivel1 {
+    color: #EFD81D;
+}
+
+.nivel2 {
+    color: #73AC5E;
+}
+
+/*Front end*/
+
+.html:hover {
+    color: #F75421;
+}
+
+.css:hover {
+    color: #254BDD;
+}
+
+.js:hover {
+    color: #EFD81D;
+}
+
+/*versionamento de código*/
+
+.Sgithub:hover {
+    color: #000;
+}
+
+.git:hover {
+    color: #EB5944;
+}
+
+/*back-end*/
+
+.spring:hover {
+    color: #77BC1F;
+}
+
+.bootstrap:hover {
+    color: #47385D;
+}
+
+.react:hover {
+    color: #61DAFB;
+}
+
+.sql:hover {
+    color: #00618A;
+}
+
+.java:hover {
+    color: #E00F0F;
+}
+
+tr,
+td,
+table {
+    padding: 0 1rem;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tabela {
+    text-align: center;
+    align-items: center;
+}
+
+.line {
+    background-color: #232323;
+    height: .5rem;
+    width: 30rem;
+    border-radius: 20px;
+}
+
+.porcentagem {
+    background-color: #FF006E;
+    height: 80%;
+    border-radius: 20px 50px 50px 20px;
+}
+
+.line90 {
+    width: 90%;
+}
+
+.line70 {
+    width: 70%;
+}
+
+.line50 {
+    width: 50%;
+}
+
+.line20 {
+    width: 20%;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+footer i {
+    margin-right: .5rem;
+    border-radius: 20px;
+}
+
+footer span,
+footer i {
+    color: #BC00DD;
+    margin-left: .5rem;
+    font-weight: 600;
+    transition: 1s linear;
+}
+
+footer i:hover{
+    color: #ff4242;
+    font-size: 1.1rem;
+}
+
+/*pop up*/
+.popUp {
+    background: #cce3de;
+    padding: 0px 2.5rem 1.5rem 2.5rem;
+    min-width: 26.5rem;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    overflow: hidden;
+    border-radius: 4px;
+    border-left: 8px solid #588157;
+}
+
+.popUp.show {
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    40% {
+        transform: -10%;
+    }
+
+    80% {
+        transform: 0%;
+    }
+
+    100% {
+        transform: -10px;
+    }
+}
+
+.popUp.show {
+    display: none;
+    position: fixed;
+}
+
+.popUp .fa-envelope-circle-check {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b9080;
+    font-size: 2rem;
+}
+
+.popUp .msg {
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    color: #6b9080;
+}
+
+.popUp .close-btn {
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    transform: translateY(-50%);
+    background: #588157;
+    padding: 1.5rem 18px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background: #588157;
+}
+
+.close-btn .fa-times {
+    color: #344e41;
+    font-size: 1.5rem;
+}
+
+/* responsividade */
+
+@media (max-width: 320px) {
+
+    #home h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:430px) {
+
+    html {
+        font-size: 70%;
+    }
+
+    nav .menu ul {
+        padding: 0;
+    }
+
+    .flex {
+        display: inline;
+    }
+
+    .popUp.show {
+        font-size: 1rem;
+        padding: 0;
+        text-align: center;
+        padding-right: .5rem;
+    }
+
+    .linhaTempo img {
+        display: none;
+    }
+
+    .responsivoImg,
+    .responsivoImg img {
+        display: inline;
+        width: 100%;
+        padding-top: 1rem;
+        margin: 0;
+    }
+
+    .text {
+        width: auto;
+        margin: 0;
+    }
+
+    .alura {
+        width: 50%;
+    }
+
+    table, tr, td{
+        display: inline;
+        padding: 0;
+    }
+}
+
+
+/* Barra de rolagem personalizada INICIO */
+::-webkit-scrollbar {
+    width: .6rem;
+    height: .2rem;
+    border-radius: .5rem;
+    background-color: #0c0f0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #44289c;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #231453;
+}
+
+/* Barra de rolagem personalizada FINAL */
